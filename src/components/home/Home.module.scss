@@ -1,0 +1,80 @@
+@import "../../scss/01-helpers/variables";
+
+.homeContent {
+  grid-template-columns: 116px repeat(2, 1fr);
+  padding-top: 5.5rem;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.homeSubtitle {
+  position: relative;
+  font-size: $h3-font-size;
+  padding-left: 5.4rem;
+  font-weight: $font-normal;
+  margin-bottom: $mb-1;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: $text-color;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.homeDescription {
+  max-width: 400px;
+  margin-bottom: $mb-3;
+}
+
+.homeImg {
+  background-image: url("../../assets/profile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0 0 0 9px rgb(254 254 254 / 30%);
+  justify-self: center;
+  order: 1;
+  animation: home__profile 8s ease-in-out infinite;
+}
+
+@keyframes home__profile {
+  0% {
+    border-radius: 60% 40% 30% 70% /60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% /50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% /60% 30% 70% 40%;
+  }
+}
+.homeSocial {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.homeSocialIcon {
+  font-size: 1.25rem;
+  color: $title-color;
+  transition: 0.3s;
+  &:hover {
+    color: $title-color-dark;
+  }
+}
+.homeTitle {
+  font-size: 3rem;
+  margin-bottom: $mb-0-25;
+}
+
+.homeHand {
+  width: 38px;
+  height: 38px;
+  margin-left: 0.4rem;
+}
