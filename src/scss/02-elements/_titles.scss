@@ -13,3 +13,9 @@
 .section__subTitle {
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .section__subTitle {
+    margin-bottom: $mb-3;
+  }
+}

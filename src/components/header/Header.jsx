@@ -24,7 +24,7 @@ const Header = () => {
           className={toggle
             ? `${styles.navMenu} ${styles.showMenu}`
             : styles.navMenu}>
-          <ul className={`${styles.navList} grid`}>
+          <ul className={`${styles.navList}`}>
             <li className="nav__item">
               <a href="#home" className={`${styles.navLink} ${styles.activeLink}`}>
                 <i className={`uil uil-estate ${styles.navIcon}`} /> Home
