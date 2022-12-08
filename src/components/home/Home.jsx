@@ -2,6 +2,8 @@ import React from 'react'
 
 import Social from './Social'
 import Data from './Data'
+import ScrollDown from './ScrollDown'
+
 import styles from './Home.module.scss'
 
 const Home = () => {
@@ -13,6 +15,7 @@ const Home = () => {
           <div className={styles.homeImg}></div>
           <Data />
         </div>
+        <ScrollDown />
       </div>
     </section>
   )

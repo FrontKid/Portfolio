@@ -4,13 +4,13 @@ const Social = () => {
   return (
     <div className={`${styles.homeSocial}`}>
       <a href="https://t.me/anywlhere" className={`${styles.homeSocialIcon}`} target="__blank">
-        <i class="uil uil-telegram" />
+        <i className="uil uil-telegram" />
       </a>
       <a href="https://github.com/FrontKid" className={`${styles.homeSocialIcon}`} target="__blank">
-        <i class="uil uil-github" />
+        <i className="uil uil-github" />
       </a>
       <a href="https://www.linkedin.com/in/denys-poltorak-6bb51824b/" className={`${styles.homeSocialIcon}`} target="__blank">
-        <i class="uil uil-linkedin" />
+        <i className="uil uil-linkedin" />
       </a>
     </div>
   )
