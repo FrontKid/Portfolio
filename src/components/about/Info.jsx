@@ -9,12 +9,12 @@ const Info = () => {
         <span className={style.aboutSubTitle}>8 year working</span>
       </div>
       <div className={style.aboutBox}>
-        <i class={`${style.aboutIcon} bx bx-briefcase-alt`} />
+        <i className={`${style.aboutIcon} bx bx-briefcase-alt`} />
         <h3 className={style.aboutTitle}>Completed</h3>
         <span className={style.aboutSubTitle}>50+ Projects</span>
       </div>
       <div className={style.aboutBox}>
-        <i class={`${style.aboutIcon} bx bx-support`} />
+        <i className={`${style.aboutIcon} bx bx-support`} />
         <h3 className={style.aboutTitle}>Support</h3>
         <span className={style.aboutSubTitle}>Online 24/7</span>
       </div>
