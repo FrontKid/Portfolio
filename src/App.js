@@ -3,6 +3,7 @@ import Home from './components/home/Home';
 import About from './components/about/About'
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 import './App.scss';
 
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Skills />
         <Contact />
+        <Footer />
       </main>
     </>
   );
