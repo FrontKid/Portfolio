@@ -4,6 +4,7 @@ import About from './components/about/About'
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import Portfolio from './components/work/Portfolio';
 
 import './App.scss';
 
@@ -15,9 +16,10 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Portfolio />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
