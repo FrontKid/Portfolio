@@ -16,7 +16,6 @@ const Works: React.FC = () => {
 
   const dispatch = useDispatch()
 
-
   useEffect(() => {
     if (item.name === 'all') {
       dispatch(setProjects(projectsData))
