@@ -7,6 +7,16 @@ import styles from './Header.module.scss'
 
 const Header: React.FC = () => {
 
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('#header')
+    if (window.pageYOffset >= 40) {
+      header?.classList.add(`${styles.scrollHeader}`)
+    } else {
+      header?.classList.remove(`${styles.scrollHeader}`)
+    }
+
+  })
+
   /*===============TOGGLE MENU================== */
   const toggle = useSelector(selectorToggle)
   const dispatch = useDispatch()
@@ -18,7 +28,7 @@ const Header: React.FC = () => {
 
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="header">
       <nav className={`${styles.nav} container`}>
         <a href="index.html" className={styles.navLogo}>Poltorak Denys</a>
 

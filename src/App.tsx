@@ -7,6 +7,7 @@ import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Portfolio from './components/work/Portfolio';
+import ScrollUp from './components/scrollUp/ScrollUp';
 
 import './App.scss';
 
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Contact />
       </main>
       <Footer />
+      <ScrollUp />
     </>
   );
 }
