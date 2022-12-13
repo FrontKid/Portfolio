@@ -1,6 +1,8 @@
+import React from 'react'
+
 import style from './Home.module.scss'
 
-const ScrollDown = () => {
+const ScrollDown: React.FC = () => {
   return (
     <div className={style.homeScroll}>
       <a className={`${style.homeScrollButton} button--flex`} href="#about">

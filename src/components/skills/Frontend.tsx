@@ -1,6 +1,8 @@
+import React from 'react'
+
 import styles from './Skills.module.scss'
 
-const Frontend = () => {
+const Frontend: React.FC = () => {
   return (
     <div className={styles.skillsContent}>
       <h3 className={styles.skillsTitle}>Front-end Developer</h3>

@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import About from './components/about/About'
@@ -8,7 +10,7 @@ import Portfolio from './components/work/Portfolio';
 
 import './App.scss';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <Header />

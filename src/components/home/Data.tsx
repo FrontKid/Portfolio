@@ -1,8 +1,10 @@
-
 import React from 'react'
-import '../../scss/01-helpers/_variables.scss'
+
 import styles from './Home.module.scss'
-const Data = () => {
+
+import '../../scss/01-helpers/_variables.scss'
+
+const Data: React.FC = () => {
   return (
     <div className={styles.homeData}>
       <h1 className={styles.homeTitle}>

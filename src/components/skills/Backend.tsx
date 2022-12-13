@@ -1,6 +1,8 @@
+import React from 'react'
+
 import styles from './Skills.module.scss'
 
-const Backend = () => {
+const Backend: React.FC = () => {
   return (
     <div className={styles.skillsContent}>
       <h3 className={styles.skillsTitle}>Back-end Developer</h3>
