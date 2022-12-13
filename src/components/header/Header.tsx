@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { selectorToggle, setToggle } from '../../features/showMenu'
+import { selectorHeader, setToggle, setActiveNav } from '../../features/headerSlice'
 
 import styles from './Header.module.scss'
 
@@ -18,10 +18,10 @@ const Header: React.FC = () => {
   })
 
   /*===============TOGGLE MENU================== */
-  const toggle = useSelector(selectorToggle)
+  const { toggle, activeNav } = useSelector(selectorHeader)
   const dispatch = useDispatch()
 
-  const toggleMenuOnClick = () => {
+  const toggleMenuOnClick = (): void => {
     dispatch(setToggle(!toggle))
   }
 
@@ -38,37 +38,51 @@ const Header: React.FC = () => {
             : styles.navMenu}>
           <ul className={`${styles.navList}`}>
             <li className="nav__item">
-              <a href="#home" className={`${styles.navLink} ${styles.activeLink}`}>
+              <a href="#home"
+                onClick={() => dispatch(setActiveNav('#home'))}
+                className={activeNav === '#home'
+                  ? `${styles.navLink} ${styles.activeLink}`
+                  : `${styles.navLink}`}>
                 <i className={`uil uil-estate ${styles.navIcon}`} /> Home
               </a>
             </li>
             <li className="nav__item">
-              <a href="#about" className={styles.navLink}>
+              <a href="#about"
+                onClick={() => dispatch(setActiveNav('#about'))}
+                className={activeNav === '#about'
+                  ? `${styles.navLink} ${styles.activeLink}`
+                  : `${styles.navLink}`}>
                 <i className={`uil uil-user ${styles.navIcon}`} /> About
               </a>
             </li>
             <li className="nav__item">
-              <a href="#skills" className={styles.navLink}>
+              <a href="#skills"
+                onClick={() => dispatch(setActiveNav('#skills'))}
+                className={activeNav === '#skills'
+                  ? `${styles.navLink} ${styles.activeLink}`
+                  : `${styles.navLink}`}>
                 <i className={`uil uil-file-alt ${styles.navIcon}`} /> Skills
               </a>
             </li>
             <li className="nav__item">
-              <a href="#services" className={styles.navLink}>
-                <i className={`uil uil-briefcase-alt ${styles.navIcon}`} /> Services
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#portfolio" className={styles.navLink}>
+              <a href="#portfolio"
+                onClick={() => dispatch(setActiveNav('#portfolio'))}
+                className={activeNav === '#portfolio'
+                  ? `${styles.navLink} ${styles.activeLink}`
+                  : `${styles.navLink}`}>
                 <i className={`uil uil-scenery ${styles.navIcon}`} /> Portfolio
               </a>
             </li>
             <li className="nav__item">
-              <a href="#contact" className={styles.navLink}>
+              <a href="#contact"
+                onClick={() => dispatch(setActiveNav('#contact'))}
+                className={activeNav === '#contact'
+                  ? `${styles.navLink} ${styles.activeLink}`
+                  : `${styles.navLink}`}>
                 <i className={`uil uil-message  ${styles.navIcon}`} /> Contact
               </a>
             </li>
           </ul>
-
           <i
             className={`uil uil-times ${styles.navClose}`}
             onClick={toggleMenuOnClick} />

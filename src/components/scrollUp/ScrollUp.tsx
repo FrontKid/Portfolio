@@ -1,8 +1,17 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+
+import { setActiveNav } from '../../features/headerSlice'
 
 import styles from './ScrollUp.module.scss'
 
 const ScrollUp: React.FC = () => {
+
+  const dispatch = useDispatch()
+
+  const hendlerClick = (): void => {
+    dispatch(setActiveNav('#home'))
+  }
 
   window.addEventListener('scroll', () => {
     const scrollUp = document.querySelector('#scrollUp')
@@ -15,7 +24,11 @@ const ScrollUp: React.FC = () => {
   })
 
   return (
-    <a className={styles.scrollUp} id="scrollUp" href="#home" >
+    <a
+      className={styles.scrollUp}
+      id="scrollUp"
+      href="#home"
+      onClick={hendlerClick}>
       <i className={`${styles.scrollIcon} uil uil-arrow-up`} />
     </a>
   )

@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import showMenu from "../features/showMenu";
+import headerSlice from "../features/headerSlice";
 import workSLice from "../features/worksSLice";
 
 export const store = configureStore({
   reducer: {
-    showMenu,
+    headerSlice,
     workSLice,
   },
 })

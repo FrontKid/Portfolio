@@ -1,8 +1,19 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+
+import { setActiveNav } from '../../features/headerSlice'
 
 import styles from './Footer.module.scss'
 
+
 const Footer: React.FC = () => {
+
+  const dispatch = useDispatch()
+
+  const hendlerClick = (navItem): void => {
+    dispatch(setActiveNav(navItem))
+  }
+
   return (
     <footer className={styles.footer}>
       <div className={`${styles.footerContainer} container`}>
@@ -10,15 +21,24 @@ const Footer: React.FC = () => {
 
         <ul className={styles.footerList}>
           <li>
-            <a className={styles.footerLink} href="#about">About</a>
+            <a
+              onClick={() => hendlerClick('#about')}
+              className={styles.footerLink}
+              href="#about">About</a>
           </li>
 
           <li>
-            <a className={styles.footerLink} href="#portfolio">Projects</a>
+            <a
+              onClick={() => hendlerClick('#portfolio')}
+              className={styles.footerLink}
+              href="#portfolio">Projects</a>
           </li>
 
           <li>
-            <a className={styles.footerLink} href="#skills">Skills</a>
+            <a
+              onClick={() => hendlerClick('#skills')}
+              className={styles.footerLink}
+              href="#skills">Skills</a>
           </li>
         </ul>
 
