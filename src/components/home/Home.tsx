@@ -6,7 +6,7 @@ import ScrollDown from './ScrollDown'
 
 import styles from './Home.module.scss'
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <section className={`${styles.home} section`} id="home">
       <div className={`${styles.homeContainer} container grid`}>

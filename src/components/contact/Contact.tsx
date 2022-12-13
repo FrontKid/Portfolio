@@ -3,14 +3,16 @@ import emailjs from '@emailjs/browser'
 
 import styles from './Contact.module.scss'
 
-const Contact = () => {
+const Contact: React.FC = () => {
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_alslkgq', 'template_q034o4l', form.current, 'wZSp2eUETZqf4Lx09')
+    //is there an object form?
+    form.current && emailjs.sendForm('service_alslkgq', 'template_q034o4l', form.current, 'wZSp2eUETZqf4Lx09')
+
     e.target.reset()
   };
 
@@ -76,8 +78,6 @@ const Contact = () => {
               <textarea
                 className={styles.contactFormInput}
                 name="project"
-                cols="30"
-                rows="10"
                 placeholder='Write your project'></textarea>
             </div>
 
@@ -111,3 +111,6 @@ const Contact = () => {
 }
 
 export default Contact
+
+
+

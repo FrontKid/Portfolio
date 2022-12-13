@@ -1,9 +1,11 @@
+import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { selectorToggle, setToggle } from '../../features/showMenu'
+
 import styles from './Header.module.scss'
 
-const Header = () => {
+const Header: React.FC = () => {
 
   /*===============TOGGLE MENU================== */
   const toggle = useSelector(selectorToggle)

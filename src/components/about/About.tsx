@@ -1,3 +1,5 @@
+import React from 'react'
+
 import profile from '../../assets/profile.jpg'
 import poltorakCV from '../../assets/poltorakCV.pdf'
 
@@ -5,7 +7,7 @@ import Info from './Info'
 
 import style from './About.module.scss'
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <section className="about section" id="about">
       <h2 className='section__title'>About me</h2>

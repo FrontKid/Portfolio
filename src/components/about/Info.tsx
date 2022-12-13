@@ -1,6 +1,7 @@
+import React from 'react'
 import style from './About.module.scss'
 
-const Info = () => {
+const Info: React.FC = () => {
   return (
     <div className={`${style.aboutInfo} grid`}>
       <div className={style.aboutBox}>
