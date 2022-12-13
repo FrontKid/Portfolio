@@ -7,6 +7,8 @@ import styles from './Header.module.scss'
 
 const Header: React.FC = () => {
 
+
+
   window.addEventListener('scroll', () => {
     const header = document.querySelector('#header')
     if (window.pageYOffset >= 40) {
@@ -30,7 +32,7 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header} id="header">
       <nav className={`${styles.nav} container`}>
-        <a href="index.html" className={styles.navLogo}>Poltorak Denys</a>
+        <a href="index.html" className={styles.navLogo}>Frontkid</a>
 
         <div
           className={toggle

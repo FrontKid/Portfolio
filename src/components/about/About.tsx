@@ -20,19 +20,18 @@ const About: React.FC = () => {
           <Info />
 
           <p className={style.aboutDescription}>
-            Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit.
-            Nam alias nulla impedit,
-            voluptatem mollitia eos magni veniam.
-            Cumque adipisci minima, in sapiente maxime,
-            fuga quam voluptate officia iure magnam mollitia.
+            Six months development experience as a web developer using react.
+            I also have experience with redux toolkit, pagination,
+            react-router, sql and work in graphics packages such as
+            Photoshop, Figma, Avocode.I have good analytical skills.
+            I learn easily and work well in a team.
           </p>
 
           <a
-            onClick={(e) => e.preventDefault()}
             rel="noreferrer"
             className='button button--flex'
             href={poltorakCV}
+            download
             target='_blank'>
             Download CV
             <svg

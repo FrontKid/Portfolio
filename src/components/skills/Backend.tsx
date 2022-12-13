@@ -26,6 +26,15 @@ const Backend: React.FC = () => {
               <span className={styles.skillsLevel}>Basic</span>
             </div>
           </div>
+
+          <div className={styles.skillsData}>
+            <i className='bx bx-badge-check' />
+
+            <div>
+              <h3 className={styles.skillsName}>SQL</h3>
+              <span className={styles.skillsLevel}>Basic</span>
+            </div>
+          </div>
         </div>
         <div className={styles.skillsGroup}>
           <div style={{ opacity: '0' }} className={styles.skillsData}>
