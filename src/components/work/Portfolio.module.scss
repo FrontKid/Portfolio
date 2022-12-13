@@ -68,3 +68,47 @@
   background-color: $title-color;
   color: $container-color;
 }
+
+@media screen and (max-width: 992px) {
+  .workContainer {
+    gap: 1.25rem;
+  }
+
+  .workCard {
+    padding: 1rem;
+  }
+
+  .workImage {
+    margin-bottom: 0.75rem;
+  }
+
+  .workTitle {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .workContainer {
+    grid-template-columns: max-content;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .workContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .workImage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .workItem {
+    font-size: $small-font-size;
+  }
+
+  .workFilters {
+    column-gap: 0.25rem;
+  }
+}

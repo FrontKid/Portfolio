@@ -20,13 +20,13 @@ const Works: React.FC = () => {
     if (item.name === 'all') {
       dispatch(setProjects(projectsData))
     } else {
-      const newProjects = projectsData.filter(project => project.category === item.name)
+      const newProjects = projectsData.filter(project => project.category.toLowerCase() === item.name)
       dispatch(setProjects(newProjects))
     }
   }, [item, dispatch])
 
   const handleClick = (e, i) => {
-    dispatch(setItem({ name: e.target.textContent }))
+    dispatch(setItem({ name: e.target.textContent.toLowerCase() }))
     dispatch(setActive(i))
   }
 
