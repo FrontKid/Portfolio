@@ -48,12 +48,13 @@
   }
 }
 
-.footerCopy {
+.footerGit {
   display: block;
-  margin-top: 4.5rem;
+  margin-top: 3.5rem;
   color: $title-color;
   text-align: center;
   font-size: $smaller-font-size;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import profile from '../../assets/profile.jpg'
+import profile from '../../assets/profileHigh.jpg'
 import poltorakCV from '../../assets/poltorakCV.pdf'
 
 import Info from './Info'
@@ -21,7 +21,7 @@ const About: React.FC = () => {
 
           <p className={style.aboutDescription}>
             Six months development experience as a web developer using react.
-            I also have experience with redux toolkit, pagination,
+            I also have experience with redux toolkit, typescript, pagination,
             react-router, sql and work in graphics packages such as
             Photoshop, Figma, Avocode.I have good analytical skills.
             I learn easily and work well in a team.

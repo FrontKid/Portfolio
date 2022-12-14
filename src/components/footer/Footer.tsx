@@ -53,9 +53,9 @@ const Footer: React.FC = () => {
             <i className="bx bxl-twitter" />
           </a>
         </div>
-        <span className={styles.footerCopy}>
-          &#169; Poltorak. All rights reserved
-        </span>
+        <a href='https://github.com/FrontKid/portfolio' rel='noreferrer' target="_blank" className={styles.footerGit}>
+          Tap here to see this page on github !
+        </a>
       </div>
     </footer>
 

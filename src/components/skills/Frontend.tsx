@@ -13,7 +13,7 @@ const Frontend: React.FC = () => {
             <i className='bx bx-badge-check' />
 
             <div>
-              <h3 className={styles.skillsName}>HTML</h3>
+              <h3 className={styles.skillsName}>Typescript</h3>
               <span className={styles.skillsLevel}>Intermediate</span>
             </div>
           </div>

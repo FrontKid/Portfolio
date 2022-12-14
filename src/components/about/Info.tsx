@@ -7,17 +7,17 @@ const Info: React.FC = () => {
       <div className={style.aboutBox}>
         <i className={`${style.aboutIcon} bx bx-award`} />
         <h3 className={style.aboutTitle}>Experience</h3>
-        <span className={style.aboutSubTitle}>6 months working</span>
+        <span className={style.aboutSubTitle}>6 months</span>
+      </div>
+      <div className={style.aboutBox}>
+        <i className={`${style.aboutIcon} bx bx-message-square-dots`} />
+        <h3 className={style.aboutTitle}>English</h3>
+        <span className={style.aboutSubTitle}>Intermediate</span>
       </div>
       <div className={style.aboutBox}>
         <i className={`${style.aboutIcon} bx bx-briefcase-alt`} />
-        <h3 className={style.aboutTitle}>Completed</h3>
-        <span className={style.aboutSubTitle}>50+ Projects</span>
-      </div>
-      <div className={style.aboutBox}>
-        <i className={`${style.aboutIcon} bx bx-support`} />
-        <h3 className={style.aboutTitle}>Support</h3>
-        <span className={style.aboutSubTitle}>Online 24/7</span>
+        <h3 className={style.aboutTitle}>Relocate</h3>
+        <span className={style.aboutSubTitle}>Possible</span>
       </div>
     </div>
   )

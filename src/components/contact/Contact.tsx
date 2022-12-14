@@ -43,14 +43,14 @@ const Contact: React.FC = () => {
             <div className={styles.contactCard}>
               <i className={`bx bxl-linkedin-square ${styles.contactCardIcon}`} />
               <h3 className={styles.contactCardTitle}>LinkedIn</h3>
-              <span className={styles.contactCardData}>https://www.linkedin.com/in/denys-poltorak-6bb51824b/</span>
-              <a className={styles.contactButton} rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/denys-poltorak-6bb51824b/">Write me <i className={`${styles.contactButtonIcon} bx bx-rigth-arrow-alt`} /></a>
+              <span className={styles.contactCardData}>Check out my linkedin</span>
+              <a className={styles.contactButton} rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/denys-poltorak-6bb51824b/">Follow me <i className={`${styles.contactButtonIcon} bx bx-rigth-arrow-alt`} /></a>
             </div>
 
           </div>
         </div>
         <div className={styles.contactContent}>
-          <h3 className={styles.contactTitle}>Write me your project</h3>
+          <h3 className={styles.contactTitle}>Send me your offer</h3>
 
           <form
             className={styles.contactForm}
@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
                 className={styles.contactFormInput}
                 type="text"
                 name='name'
-                placeholder='Inser yout name' />
+                placeholder='Insert your name' />
             </div>
 
             <div className={styles.contactFormDiv}>
@@ -71,14 +71,14 @@ const Contact: React.FC = () => {
                 className={styles.contactFormInput}
                 type="text"
                 name='name'
-                placeholder='Inser yout email' />
+                placeholder='Insert your email' />
             </div>
             <div className={`${styles.contactFormDiv} ${styles.contactFormArea}`}>
-              <label className={styles.contactFormTag}>Project</label>
+              <label className={styles.contactFormTag}>Company</label>
               <textarea
                 className={styles.contactFormInput}
                 name="project"
-                placeholder='Write your project'></textarea>
+                placeholder='Describe your offer and company'></textarea>
             </div>
 
             <button
