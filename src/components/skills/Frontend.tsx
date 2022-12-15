@@ -30,7 +30,7 @@ const Frontend: React.FC = () => {
 
             <div>
               <h3 className={styles.skillsName}>JavaScript</h3>
-              <span className={styles.skillsLevel}>Intermediate</span>
+              <span className={styles.skillsLevel}>U-Intermediate</span>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@ const Frontend: React.FC = () => {
 
             <div>
               <h3 className={styles.skillsName}>Tailwind</h3>
-              <span className={styles.skillsLevel}>Intermediate</span>
+              <span className={styles.skillsLevel}>Basic</span>
             </div>
           </div>
           <div className={styles.skillsData}>

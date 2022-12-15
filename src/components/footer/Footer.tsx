@@ -43,13 +43,13 @@ const Footer: React.FC = () => {
         </ul>
 
         <div className={styles.footerSocials}>
-          <a href="https://t.me/anywlhere" className={`${styles.footerSocialLink}`} target="__blank">
+          <a href="https://www.facebook.com/profile.php?id=100051344314528" className={`${styles.footerSocialLink}`} target="__blank">
             <i className="bx bxl-facebook" />
           </a>
           <a href="https://github.com/FrontKid" className={`${styles.footerSocialLink}`} target="__blank">
             <i className="bx bxl-instagram" />
           </a>
-          <a href="https://www.linkedin.com/in/denys-poltorak-6bb51824b/" className={`${styles.footerSocialLink}`} target="__blank">
+          <a href="https://twitter.com/FronKidOd" className={`${styles.footerSocialLink}`} target="__blank">
             <i className="bx bxl-twitter" />
           </a>
         </div>
