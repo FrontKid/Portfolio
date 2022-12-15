@@ -1,5 +1,11 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser'
+import { useSelector, useDispatch } from 'react-redux'
+
+//form validation f()
+import formValidation from './contactValidation';
+
+import { validation, setInputName, setInputEmail } from '../../features/contactValidationSlice';
 
 import styles from './Contact.module.scss'
 
@@ -7,13 +13,20 @@ const Contact: React.FC = () => {
 
   const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e) => {
+  const dispatch = useDispatch()
+  const { inputName, inputEmail, checkValidName, checkValidEmail } = useSelector(validation)
+
+  const sendEmail = (e: any): void => {
     e.preventDefault();
 
-    //is there an object form?
-    form.current && emailjs.sendForm('service_alslkgq', 'template_q034o4l', form.current, 'wZSp2eUETZqf4Lx09')
+    if (formValidation(inputName, inputEmail, dispatch)) {
+      //is there an object form?
+      form.current && emailjs.sendForm('service_alslkgq', 'template_q034o4l', form.current, 'wZSp2eUETZqf4Lx09')
 
-    e.target.reset()
+      dispatch(setInputEmail(''))
+      dispatch(setInputName(''))
+      e.target.reset()
+    }
   };
 
   return (
@@ -28,6 +41,7 @@ const Contact: React.FC = () => {
 
             <div className={styles.contactCard}>
               <i className={`bx bx-mail-send ${styles.contactCardIcon}`} />
+
               <h3 className={styles.contactCardTitle}>Email:</h3>
               <span className={styles.contactCardData}>itwfrontend@gmail.com</span>
               <a className={styles.contactButton} href="mailto:itwfrontend@gmail.com">Write me <i className={`${styles.contactButtonIcon} bx bx-rigth-arrow-alt`} /></a>
@@ -57,28 +71,38 @@ const Contact: React.FC = () => {
             ref={form}
             onSubmit={sendEmail}>
             <div className={styles.contactFormDiv}>
-              <label className={styles.contactFormTag}>Name</label>
+              <label className={styles.contactFormTag}>Name*</label>
               <input
+                onChange={(e) => dispatch(setInputName(e.target.value))
+                }
+                value={inputName}
                 className={styles.contactFormInput}
                 type="text"
                 name='name'
                 placeholder='Insert your name' />
+              {!checkValidName && <span className={styles.incorrectNameValue}>Only letters available</span>}
             </div>
 
             <div className={styles.contactFormDiv}>
-              <label className={styles.contactFormTag}>Mail</label>
+              <label className={styles.contactFormTag}>Mail*</label>
               <input
+                onChange={(e) => dispatch(setInputEmail(e.target.value))}
+                value={inputEmail}
                 className={styles.contactFormInput}
                 type="text"
                 name='name'
                 placeholder='Insert your email' />
+              {!checkValidEmail && <span className={styles.incorrectNameValue}>
+                Invalid email address entered
+              </span>}
             </div>
             <div className={`${styles.contactFormDiv} ${styles.contactFormArea}`}>
               <label className={styles.contactFormTag}>Company</label>
               <textarea
                 className={styles.contactFormInput}
                 name="project"
-                placeholder='Describe your offer and company'></textarea>
+                placeholder='Describe your offer and company' />
+
             </div>
 
             <button
