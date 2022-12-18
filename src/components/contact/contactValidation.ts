@@ -1,9 +1,12 @@
+//slice
 import { setCheckValidEmail, setCheckValidName } from '../../features/contactValidationSlice';
 
 const formValidation = (inputName: string, inputEmail: string, dispatch): boolean => {
+
   //name validation
   if (!inputName) {
     dispatch(setCheckValidName(false))
+
     return false
   }
 
@@ -12,6 +15,7 @@ const formValidation = (inputName: string, inputEmail: string, dispatch): boolea
 
     if (inputNameLetter.toLowerCase() === inputNameLetter.toUpperCase()) {
       dispatch(setCheckValidName(false))
+
       return false
     } else {
       dispatch(setCheckValidName(true))
@@ -19,7 +23,7 @@ const formValidation = (inputName: string, inputEmail: string, dispatch): boolea
   }
 
   //email validation
-  const checkValidEmail = String(inputEmail)
+  const checkValidEmail: RegExpMatchArray | null = String(inputEmail)
     .toLowerCase()
     .match(
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -27,6 +31,7 @@ const formValidation = (inputName: string, inputEmail: string, dispatch): boolea
 
   if (!checkValidEmail) {
     dispatch(setCheckValidEmail(false))
+
     return false
   } else {
     dispatch(setCheckValidEmail(true))

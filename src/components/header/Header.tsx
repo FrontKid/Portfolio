@@ -1,16 +1,17 @@
+//react
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
+//slice
 import { selectorHeader, setToggle, setActiveNav } from '../../features/headerSlice'
 
+//styles
 import styles from './Header.module.scss'
 
 const Header: React.FC = () => {
-
-
-
   window.addEventListener('scroll', () => {
     const header = document.querySelector('#header')
+
     if (window.pageYOffset >= 40) {
       header?.classList.add(`${styles.scrollHeader}`)
     } else {

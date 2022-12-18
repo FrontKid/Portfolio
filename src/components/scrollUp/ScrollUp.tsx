@@ -1,12 +1,14 @@
+//react
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
+//slice
 import { setActiveNav } from '../../features/headerSlice'
 
+//styles
 import styles from './ScrollUp.module.scss'
 
 const ScrollUp: React.FC = () => {
-
   const dispatch = useDispatch()
 
   const hendlerClick = (): void => {
@@ -15,6 +17,7 @@ const ScrollUp: React.FC = () => {
 
   window.addEventListener('scroll', () => {
     const scrollUp = document.querySelector('#scrollUp')
+
     if (window.pageYOffset >= 560) {
       scrollUp?.classList.add(`${styles.showScroll}`)
     } else {

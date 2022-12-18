@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
 
   const dispatch = useDispatch()
 
-  const hendlerClick = (navItem): void => {
+  const hendlerClick = (navItem: string): void => {
     dispatch(setActiveNav(navItem))
   }
 
@@ -18,7 +18,6 @@ const Footer: React.FC = () => {
     <footer className={styles.footer}>
       <div className={`${styles.footerContainer} container`}>
         <h1 className={styles.footerTitle}>Poltorak Denys</h1>
-
         <ul className={styles.footerList}>
           <li>
             <a
@@ -26,14 +25,12 @@ const Footer: React.FC = () => {
               className={styles.footerLink}
               href="#about">About</a>
           </li>
-
           <li>
             <a
               onClick={() => hendlerClick('#portfolio')}
               className={styles.footerLink}
               href="#portfolio">Projects</a>
           </li>
-
           <li>
             <a
               onClick={() => hendlerClick('#skills')}
@@ -41,7 +38,6 @@ const Footer: React.FC = () => {
               href="#skills">Skills</a>
           </li>
         </ul>
-
         <div className={styles.footerSocials}>
           <a href="https://www.facebook.com/profile.php?id=100051344314528" className={`${styles.footerSocialLink}`} target="__blank">
             <i className="bx bxl-facebook" />

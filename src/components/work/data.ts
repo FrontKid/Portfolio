@@ -1,17 +1,22 @@
+//assets
 import lampStore from '../../assets/portfolioLamp.jpg'
 import todoList from '../../assets/portfolioTodo.jpg'
 import pizza from '../../assets/portfolioPizza.jpg'
 
-type TProjectsData = {
-  id: number,
-  image: string,
-  title: string,
-  category: string,
-  gitHub: string,
-  demo: string
+export interface IProjectsData {
+  id: number;
+  image: string;
+  title: string;
+  category: string;
+  gitHub: string;
+  demo: string;
 }
 
-export const projectsData: TProjectsData[] = [
+export interface IProjectNav {
+  name: string
+}
+
+export const projectsData: IProjectsData[] = [
   {
     id: 0,
     image: lampStore,
@@ -39,7 +44,7 @@ export const projectsData: TProjectsData[] = [
 ]
 
 
-export const projectsNav: { name: string }[] = [
+export const projectsNav: IProjectNav[] = [
   { name: 'all' },
   { name: 'web' },
   { name: 'app' },
