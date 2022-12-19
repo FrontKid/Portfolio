@@ -84,8 +84,9 @@ const Contact: React.FC = () => {
               {!checkValidName && <span className={styles.incorrectNameValue}>Only letters available</span>}
             </div>
             <div className={styles.contactFormDiv}>
-              <label className={styles.contactFormTag}>Mail*</label>
+              <label htmlFor='mail' className={styles.contactFormTag}>Mail*</label>
               <input
+                id='mail'
                 onChange={(e) => dispatch(setInputEmail(e.target.value))}
                 value={inputEmail}
                 className={styles.contactFormInput}
@@ -103,6 +104,7 @@ const Contact: React.FC = () => {
                 name="project"
                 placeholder='Describe your offer and company' />
             </div>
+            <span className={styles.contactRequired}>* - Required fields</span>
             <button
               type='submit'
               className='button button--flex'  >

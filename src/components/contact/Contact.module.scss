@@ -72,8 +72,11 @@
 
 .contactFormDiv {
   position: relative;
-  margin-bottom: $mb-2;
   height: 4rem;
+
+  &:not(:first-child) {
+    margin-top: $mb-2;
+  }
 }
 
 .contactFormInput {
@@ -89,6 +92,13 @@
   border-radius: 0.75rem;
   padding: 1.5rem;
   z-index: 1;
+  transition: all 0.4s ease 0s;
+  &:focus {
+    border-color: $form-border;
+  }
+  &:focus::placeholder {
+    color: $title-color-dark;
+  }
 }
 
 .contactFormTag {
@@ -109,6 +119,13 @@
   textarea {
     resize: none;
   }
+}
+
+.contactRequired {
+  display: block;
+  font-size: 0.7rem;
+  margin: 0.4rem 0 1.6rem 0;
+  opacity: 0.5;
 }
 
 .incorrectNameValue {

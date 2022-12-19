@@ -17,23 +17,21 @@ import './App.scss';
 const Portfolio = React.lazy(() => import((/*webpackChunkName: 'Portfolio'*/ './components/work/Portfolio')))
 const Contact = React.lazy(() => import((/*webpackChunkName: 'Contact'*/ './components/contact/Contact')))
 
-const App: React.FC = () => {
-  return (
-    <>
-      <Header />
-      <main className='main'>
-        <Home />
-        <About />
-        <Skills />
-        <Suspense fallback={<div className='container'>Sorry</div>}>
-          <Portfolio />
-          <Contact />
-        </Suspense>
-      </main>
-      <Footer />
-      <ScrollUp />
-    </>
-  );
-}
+const App: React.FC = () => (
+  <>
+    <Header />
+    <main className='main'>
+      <Home />
+      <About />
+      <Skills />
+      <Suspense fallback={<div className='container'>Sorry</div>}>
+        <Portfolio />
+        <Contact />
+      </Suspense>
+    </main>
+    <Footer />
+    <ScrollUp />
+  </>
+)
 
 export default App;

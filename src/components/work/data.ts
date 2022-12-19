@@ -2,6 +2,7 @@
 import lampStore from '../../assets/portfolioLamp.jpg'
 import todoList from '../../assets/portfolioTodo.jpg'
 import pizza from '../../assets/portfolioPizza.jpg'
+import webstudio from '../../assets/webStudio.jpg'
 
 //types
 import { IProjectNav, IProjectsData } from '../../features/works/types'
@@ -32,6 +33,14 @@ export const projectsData: IProjectsData[] = [
     category: 'app',
     gitHub: 'https://github.com/FrontKid/Pizza',
     demo: 'https://whimsical-creponne-fb9548.netlify.app/',
+  },
+  {
+    id: 3,
+    image: webstudio,
+    title: 'Web Studio',
+    category: 'web',
+    gitHub: 'https://github.com/FrontKid/webstudio',
+    demo: 'https://glowing-dusk-1983ba.netlify.app/',
   },
 ]
 
