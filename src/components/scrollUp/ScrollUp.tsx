@@ -3,7 +3,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 
 //slice
-import { setActiveNav } from '../../features/headerSlice'
+import { setActiveNav } from '../../features/header/slice'
 
 //styles
 import styles from './ScrollUp.module.scss'

@@ -3,18 +3,10 @@ import lampStore from '../../assets/portfolioLamp.jpg'
 import todoList from '../../assets/portfolioTodo.jpg'
 import pizza from '../../assets/portfolioPizza.jpg'
 
-export interface IProjectsData {
-  id: number;
-  image: string;
-  title: string;
-  category: string;
-  gitHub: string;
-  demo: string;
-}
+//types
+import { IProjectNav, IProjectsData } from '../../features/works/types'
 
-export interface IProjectNav {
-  name: string
-}
+
 
 export const projectsData: IProjectsData[] = [
   {
@@ -38,8 +30,8 @@ export const projectsData: IProjectsData[] = [
     image: pizza,
     title: 'Pizza',
     category: 'app',
-    gitHub: '',
-    demo: '',
+    gitHub: 'https://github.com/FrontKid/Pizza',
+    demo: 'https://whimsical-creponne-fb9548.netlify.app/',
   },
 ]
 

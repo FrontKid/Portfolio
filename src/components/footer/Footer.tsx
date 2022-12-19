@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-import { setActiveNav } from '../../features/headerSlice'
+import { setActiveNav } from '../../features/header/slice'
 
 import styles from './Footer.module.scss'
 

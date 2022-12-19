@@ -63,6 +63,10 @@
   transform: translate(0.25rem);
 }
 
+.workCardLinks {
+  display: flex;
+  justify-content: space-between;
+}
 //active work nav
 .workItemActive {
   background-color: $title-color;

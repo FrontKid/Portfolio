@@ -1,5 +1,5 @@
 //slice
-import { setCheckValidEmail, setCheckValidName } from '../../features/contactValidationSlice';
+import { setCheckValidEmail, setCheckValidName } from '../../features/contacts/slice';
 
 const formValidation = (inputName: string, inputEmail: string, dispatch): boolean => {
 

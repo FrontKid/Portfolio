@@ -1,15 +1,21 @@
-import React from 'react';
+//react
+import React, { Suspense } from 'react';
 
+
+//components
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import About from './components/about/About'
 import Skills from './components/skills/Skills';
-import Contact from './components/contact/Contact';
+//import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import Portfolio from './components/work/Portfolio';
 import ScrollUp from './components/scrollUp/ScrollUp';
 
 import './App.scss';
+
+//lazy loading
+const Portfolio = React.lazy(() => import((/*webpackChunkName: 'Portfolio'*/ './components/work/Portfolio')))
+const Contact = React.lazy(() => import((/*webpackChunkName: 'Contact'*/ './components/contact/Contact')))
 
 const App: React.FC = () => {
   return (
@@ -19,8 +25,10 @@ const App: React.FC = () => {
         <Home />
         <About />
         <Skills />
-        <Portfolio />
-        <Contact />
+        <Suspense fallback={<div className='container'>Sorry</div>}>
+          <Portfolio />
+          <Contact />
+        </Suspense>
       </main>
       <Footer />
       <ScrollUp />

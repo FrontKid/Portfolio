@@ -7,7 +7,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import { projectsData, projectsNav } from './data'
 
 //slice
-import { selectorsWork, setProjects, setItem, setActive } from '../../features/worksSLice'
+import { setProjects, setItem, setActive } from '../../features/works/slice'
+
+//selectors
+import { selectorsWork } from '../../features/works/selectors'
 
 //components
 import WorksItem from './WorksItem'

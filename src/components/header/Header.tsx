@@ -3,7 +3,10 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 //slice
-import { selectorHeader, setToggle, setActiveNav } from '../../features/headerSlice'
+import { setToggle, setActiveNav } from '../../features/header/slice'
+
+//selectors
+import { selectorHeader } from '../../features/header/selectors'
 
 //styles
 import styles from './Header.module.scss'

@@ -6,8 +6,11 @@ import { useSelector, useDispatch } from 'react-redux'
 //form validation f()
 import formValidation from './contactValidation';
 
+//selectors
+import { validation } from '../../features/contacts/selectors';
+
 //slice
-import { validation, setInputName, setInputEmail } from '../../features/contactValidationSlice';
+import { setInputName, setInputEmail } from '../../features/contacts/slice';
 
 //styles
 import styles from './Contact.module.scss'

@@ -1,10 +1,10 @@
 //react
 import { configureStore } from "@reduxjs/toolkit";
 
-//slice
-import headerSlice from "../features/headerSlice";
-import workSLice from "../features/worksSLice";
-import contactValidation from "../features/contactValidationSlice";
+//slices
+import headerSlice from "../features/header/slice";
+import workSLice from "../features/works/slice";
+import contactValidation from "../features/contacts/slice";
 
 export const store = configureStore({
   reducer: {
