@@ -3,7 +3,7 @@ import React from 'react'
 
 //assets
 import profile from '../../assets/profileHigh.jpg'
-import poltorakCV from '../../assets/poltorakCV.pdf'
+//import poltorakCV from '../../assets/poltorakCV.pdf'
 
 //components
 import Info from './Info'
@@ -29,7 +29,7 @@ const About: React.FC = () => (
         <a
           rel="noreferrer"
           className='button button--flex'
-          href={poltorakCV}
+          href='https://drive.google.com/file/d/1W4erB7J6UrYO2ds59WHzmzdfyf64zDSg/view?usp=share_link'
           download
           target='_blank'>
           Download CV
