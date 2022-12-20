@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
           <a href="https://www.facebook.com/profile.php?id=100051344314528" className={`${styles.footerSocialLink}`} target="__blank">
             <i className="bx bxl-facebook" />
           </a>
-          <a href="https://github.com/FrontKid" className={`${styles.footerSocialLink}`} target="__blank">
+          <a href="https://www.instagram.com/p/BzcP1WPo-d-RU5C4rGFexQhpHMKpoH5oveEUhI0/?igshid=YmMyMTA2M2Y%3D" className={`${styles.footerSocialLink}`} target="__blank">
             <i className="bx bxl-instagram" />
           </a>
           <a href="https://twitter.com/FronKidOd" className={`${styles.footerSocialLink}`} target="__blank">
