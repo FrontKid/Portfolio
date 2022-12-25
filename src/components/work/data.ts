@@ -24,7 +24,7 @@ export const projectsData: IProjectsData[] = [
     title: 'Todo',
     category: 'app',
     gitHub: 'https://github.com/FrontKid/react-todo',
-    demo: 'https://glittering-cuchufli-4e439d.netlify.app/',
+    demo: 'https://jade-sprinkles-399e6a.netlify.app/',
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ export const projectsData: IProjectsData[] = [
     title: 'Pizza',
     category: 'app',
     gitHub: 'https://github.com/FrontKid/Pizza',
-    demo: 'https://whimsical-creponne-fb9548.netlify.app/',
+    demo: 'https://warm-wisp-ef335b.netlify.app/',
   },
   {
     id: 3,
