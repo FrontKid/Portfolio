@@ -3,6 +3,8 @@ import lampStore from '../../assets/portfolioLamp.jpg'
 import todoList from '../../assets/portfolioTodo.jpg'
 import pizza from '../../assets/portfolioPizza.jpg'
 import webstudio from '../../assets/webStudio.jpg'
+import colorized from '../../assets/colorized.jpg'
+import aim from '../../assets/aim-training.jpg'
 
 //types
 import { IProjectNav, IProjectsData } from '../../features/works/types'
@@ -42,6 +44,22 @@ export const projectsData: IProjectsData[] = [
     gitHub: 'https://github.com/FrontKid/webstudio',
     demo: 'https://glowing-dusk-1983ba.netlify.app/',
   },
+  {
+    id: 4,
+    image: colorized,
+    title: 'Rainbow',
+    category: 'game',
+    gitHub: 'https://github.com/FrontKid/colorize-board',
+    demo: 'https://superb-puffpuff-72d499.netlify.app',
+  },
+  {
+    id: 5,
+    image: aim,
+    title: 'Aim training',
+    category: 'game',
+    gitHub: 'https://github.com/FrontKid/aim-helper',
+    demo: 'https://kaleidoscopic-dieffenbachia-7c3133.netlify.app/',
+  },
 ]
 
 
@@ -49,4 +67,5 @@ export const projectsNav: IProjectNav[] = [
   { name: 'all' },
   { name: 'web' },
   { name: 'app' },
+  { name: 'game' },
 ]
