@@ -20,7 +20,7 @@ const About: React.FC = () => (
       <div className={style.aboutData}>
         <Info />
         <p className={style.aboutDescription}>
-          Six months development experience as a web developer using react.
+          One year development experience as a web developer using react.
           I also have experience with redux toolkit, typescript, pagination,
           react-router, sql and work in graphics packages such as
           Photoshop, Figma, Avocode.I have good analytical skills.
