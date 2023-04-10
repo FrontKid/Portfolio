@@ -1,5 +1,5 @@
 //assets
-import lampStore from '../../assets/portfolioLamp.jpg'
+import shelter from '../../assets/shelter.png'
 import todoList from '../../assets/portfolioTodo.jpg'
 import pizza from '../../assets/portfolioPizza.jpg'
 import webstudio from '../../assets/webStudio.jpg'
@@ -14,11 +14,11 @@ import { IProjectNav, IProjectsData } from '../../features/works/types'
 export const projectsData: IProjectsData[] = [
   {
     id: 0,
-    image: lampStore,
-    title: 'Lamp store',
+    image: shelter,
+    title: 'Shelter',
     category: 'web',
-    gitHub: 'https://github.com/FrontKid/lamp',
-    demo: 'https://effulgent-cucurucho-a5b736.netlify.app/index.html',
+    gitHub: 'https://github.com/FrontKid/shelter',
+    demo: 'https://rolling-scopes-school.github.io/frontkid-JSFE2023Q1/shelter/index.html',
   },
   {
     id: 1,
