@@ -9,7 +9,7 @@ const Info: React.FC = () => (
     <div className={style.aboutBox}>
       <i className={`${style.aboutIcon} bx bx-award`} />
       <h3 className={style.aboutTitle}>Experience</h3>
-      <span className={style.aboutSubTitle}>6 months</span>
+      <span className={style.aboutSubTitle}>1 year</span>
     </div>
     <div className={style.aboutBox}>
       <i className={`${style.aboutIcon} bx bx-message-square-dots`} />
