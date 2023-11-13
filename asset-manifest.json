@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1fd36052.css",
+    "main.js": "/portfolio/static/js/main.d8f02931.js",
+    "Portfolio.css": "/portfolio/static/css/Portfolio.5d40c56f.chunk.css",
+    "Portfolio.js": "/portfolio/static/js/Portfolio.76c95516.chunk.js",
+    "Contact.css": "/portfolio/static/css/Contact.223a6360.chunk.css",
+    "Contact.js": "/portfolio/static/js/Contact.3eac841b.chunk.js",
+    "static/media/shelter.png": "/portfolio/static/media/shelter.8911fffc94c1af33aec0.png",
+    "static/media/profileHigh.jpg": "/portfolio/static/media/profileHigh.821108e81a1a3bff66d9.jpg",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.a1addc388d139b02e3fc.jpg",
+    "static/media/portfolioPizza.jpg": "/portfolio/static/media/portfolioPizza.e049a3837b7dcd05013e.jpg",
+    "static/media/webStudio.jpg": "/portfolio/static/media/webStudio.42b036030d41f3acf4cc.jpg",
+    "static/media/portfolioTodo.jpg": "/portfolio/static/media/portfolioTodo.e02deedb8fff9324a596.jpg",
+    "static/media/colorized.jpg": "/portfolio/static/media/colorized.2879c68485233a9779ca.jpg",
+    "static/media/aim-training.jpg": "/portfolio/static/media/aim-training.22749bceec0bf24bb85d.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.1fd36052.css.map": "/portfolio/static/css/main.1fd36052.css.map",
+    "main.d8f02931.js.map": "/portfolio/static/js/main.d8f02931.js.map",
+    "Portfolio.5d40c56f.chunk.css.map": "/portfolio/static/css/Portfolio.5d40c56f.chunk.css.map",
+    "Portfolio.76c95516.chunk.js.map": "/portfolio/static/js/Portfolio.76c95516.chunk.js.map",
+    "Contact.223a6360.chunk.css.map": "/portfolio/static/css/Contact.223a6360.chunk.css.map",
+    "Contact.3eac841b.chunk.js.map": "/portfolio/static/js/Contact.3eac841b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fd36052.css",
+    "static/js/main.d8f02931.js"
+  ]
+}
