@@ -36,7 +36,7 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header} id="header">
       <nav className={`${styles.nav} container`}>
-        <a href="index.html" className={styles.navLogo}>Frontkid</a>
+        <a href="#/" className={styles.navLogo}>Frontkid</a>
 
         <div
           className={toggle
