@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
               <i className={`bx bxl-linkedin-square ${styles.contactCardIcon}`} />
               <h3 className={styles.contactCardTitle}>LinkedIn</h3>
               <span className={styles.contactCardData}>Check out my linkedin</span>
-              <a className={styles.contactButton} rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/denys-poltorak-6bb51824b/">Follow me <i className={`${styles.contactButtonIcon} bx bx-rigth-arrow-alt`} /></a>
+              <a className={styles.contactButton} rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/denys-poltorak-b14579292/">Follow me <i className={`${styles.contactButtonIcon} bx bx-rigth-arrow-alt`} /></a>
             </div>
           </div>
         </div>

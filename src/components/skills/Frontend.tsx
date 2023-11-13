@@ -6,14 +6,14 @@ import styles from './Skills.module.scss'
 
 const Frontend: React.FC = () => (
   <div className={styles.skillsContent}>
-    <h3 className={styles.skillsTitle}>Front-end Developer</h3>
+    <h3 className={styles.skillsTitle}>Front-end Skills</h3>
     <div className={styles.skillsBox}>
       <div className={styles.skillsGroup}>
         <div className={styles.skillsData}>
           <i className='bx bx-badge-check' />
           <div>
             <h3 className={styles.skillsName}>Typescript</h3>
-            <span className={styles.skillsLevel}>Intermediate</span>
+            <span className={styles.skillsLevel}>High level</span>
           </div>
         </div>
         <div className={styles.skillsData}>
@@ -27,7 +27,7 @@ const Frontend: React.FC = () => (
           <i className='bx bx-badge-check' />
           <div>
             <h3 className={styles.skillsName}>JavaScript</h3>
-            <span className={styles.skillsLevel}>U-Intermediate</span>
+            <span className={styles.skillsLevel}>High level</span>
           </div>
         </div>
       </div>
@@ -36,21 +36,21 @@ const Frontend: React.FC = () => (
           <i className='bx bx-badge-check' />
           <div>
             <h3 className={styles.skillsName}>Tailwind</h3>
-            <span className={styles.skillsLevel}>Basic</span>
+            <span className={styles.skillsLevel}>Intermediate</span>
           </div>
         </div>
         <div className={styles.skillsData}>
           <i className='bx bx-badge-check' />
           <div>
             <h3 className={styles.skillsName}>GIT</h3>
-            <span className={styles.skillsLevel}>Intermediate</span>
+            <span className={styles.skillsLevel}>High level</span>
           </div>
         </div>
         <div className={styles.skillsData}>
           <i className='bx bx-badge-check' />
           <div>
             <h3 className={styles.skillsName}>React</h3>
-            <span className={styles.skillsLevel}>Intermediate</span>
+            <span className={styles.skillsLevel}>High level</span>
           </div>
         </div>
       </div>

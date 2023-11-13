@@ -20,7 +20,7 @@ const About: React.FC = () => (
       <div className={style.aboutData}>
         <Info />
         <p className={style.aboutDescription}>
-          One year development experience as a web developer using react.
+          One more year of development experience as a web developer using react.
           I also have experience with redux toolkit, typescript, pagination,
           react-router, sql and work in graphics packages such as
           Photoshop, Figma, Avocode.I have good analytical skills.
@@ -29,7 +29,7 @@ const About: React.FC = () => (
         <a
           rel="noreferrer"
           className='button button--flex'
-          href='https://drive.google.com/file/d/1W4erB7J6UrYO2ds59WHzmzdfyf64zDSg/view?usp=share_link'
+          href='https://drive.google.com/file/d/1maEMIN-PCFcAhL-AOQT-ZNMRjPR1zwoI/view?usp=sharing'
           download
           target='_blank'>
           Download CV

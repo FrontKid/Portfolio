@@ -1,8 +1,8 @@
 //assets
 import shelter from '../../assets/shelter.png'
-import todoList from '../../assets/portfolioTodo.jpg'
-import pizza from '../../assets/portfolioPizza.jpg'
-import webstudio from '../../assets/webStudio.jpg'
+import nothing from '../../assets/portfolioNothing.png';
+import portfolioTodo from '../../assets/portfolioTodo.png';
+import portfolioGoodsShop from '../../assets/portfolioGoodsShop.png';
 import colorized from '../../assets/colorized.jpg'
 import aim from '../../assets/aim-training.jpg'
 
@@ -22,27 +22,27 @@ export const projectsData: IProjectsData[] = [
   },
   {
     id: 1,
-    image: todoList,
-    title: 'Todo',
-    category: 'app',
-    gitHub: 'https://github.com/FrontKid/react-todo',
-    demo: 'https://jade-sprinkles-399e6a.netlify.app/',
+    image: nothing,
+    title: 'Nothing',
+    category: 'web',
+    gitHub: 'https://github.com/FrontKid/layout_landing-page/tree/develop',
+    demo: 'https://frontkid.github.io/layout_landing-page/',
   },
   {
     id: 2,
-    image: pizza,
-    title: 'Pizza',
+    image: portfolioTodo,
+    title: 'Task Master',
     category: 'app',
-    gitHub: 'https://github.com/FrontKid/Pizza',
-    demo: 'https://warm-wisp-ef335b.netlify.app/',
+    gitHub: 'https://github.com/FrontKid/TaskMaster',
+    demo: 'https://frontkid.github.io/react_todo-app-with-api/',
   },
   {
     id: 3,
-    image: webstudio,
-    title: 'Web Studio',
-    category: 'web',
-    gitHub: 'https://github.com/FrontKid/webstudio',
-    demo: 'https://glowing-dusk-1983ba.netlify.app/',
+    image: portfolioGoodsShop,
+    title: 'Goods Shop',
+    category: 'app',
+    gitHub: 'https://github.com/fe-jul23-LGTM/catalog',
+    demo: 'https://fe-jul23-lgtm.github.io/catalog',
   },
   {
     id: 4,
